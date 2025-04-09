@@ -1,0 +1,5039 @@
+{
+    "name": "best_BowelRCNN_42",
+    "version": "1.0",
+    "type_model": "CNN",
+    "description": "",
+    "dataset": {
+        "audio_properties": {
+            "sample_rate": 44100,
+            "window_height": 64,
+            "window_width": 126,
+            "window_length": 0.2,
+            "max_frequency": 2000,
+            "spectrogram_hop_length": 0.0015873015873015873,
+            "spectrogram_fft": 0.032,
+            "audio_mean": -47.913372,
+            "audio_std": 17.81253,
+            "spectrogram_window_type": "hann"
+        },
+        "train_files": [
+            {
+                "sample_id": "313_a"
+            },
+            {
+                "sample_id": "34_b"
+            },
+            {
+                "sample_id": "116_b"
+            },
+            {
+                "sample_id": "7_f"
+            },
+            {
+                "sample_id": "21_q"
+            },
+            {
+                "sample_id": "8_h"
+            },
+            {
+                "sample_id": "50_q"
+            },
+            {
+                "sample_id": "336_c"
+            },
+            {
+                "sample_id": "36_d"
+            },
+            {
+                "sample_id": "52_d"
+            },
+            {
+                "sample_id": "10_f"
+            },
+            {
+                "sample_id": "97_c"
+            },
+            {
+                "sample_id": "196_c"
+            },
+            {
+                "sample_id": "114_e"
+            },
+            {
+                "sample_id": "331_c"
+            },
+            {
+                "sample_id": "20_b"
+            },
+            {
+                "sample_id": "57_a"
+            },
+            {
+                "sample_id": "59_d"
+            },
+            {
+                "sample_id": "168_a"
+            },
+            {
+                "sample_id": "0_k"
+            },
+            {
+                "sample_id": "20_e"
+            },
+            {
+                "sample_id": "49_g"
+            },
+            {
+                "sample_id": "1_g"
+            },
+            {
+                "sample_id": "350_c"
+            },
+            {
+                "sample_id": "321_c"
+            },
+            {
+                "sample_id": "184_c"
+            },
+            {
+                "sample_id": "315_a"
+            },
+            {
+                "sample_id": "158_a"
+            },
+            {
+                "sample_id": "259_c"
+            },
+            {
+                "sample_id": "237_a"
+            },
+            {
+                "sample_id": "8_a"
+            },
+            {
+                "sample_id": "125_a"
+            },
+            {
+                "sample_id": "66_e"
+            },
+            {
+                "sample_id": "188_c"
+            },
+            {
+                "sample_id": "144_a"
+            },
+            {
+                "sample_id": "25_q"
+            },
+            {
+                "sample_id": "110_a"
+            },
+            {
+                "sample_id": "0_p"
+            },
+            {
+                "sample_id": "112_q"
+            },
+            {
+                "sample_id": "172_d"
+            },
+            {
+                "sample_id": "1_p"
+            },
+            {
+                "sample_id": "52_e"
+            },
+            {
+                "sample_id": "15_h"
+            },
+            {
+                "sample_id": "42_d"
+            },
+            {
+                "sample_id": "24_f"
+            },
+            {
+                "sample_id": "7_j"
+            },
+            {
+                "sample_id": "93_d"
+            },
+            {
+                "sample_id": "307_c"
+            },
+            {
+                "sample_id": "241_c"
+            },
+            {
+                "sample_id": "213_a"
+            },
+            {
+                "sample_id": "94_d"
+            },
+            {
+                "sample_id": "45_c"
+            },
+            {
+                "sample_id": "22_b"
+            },
+            {
+                "sample_id": "56_f"
+            },
+            {
+                "sample_id": "72_e"
+            },
+            {
+                "sample_id": "67_e"
+            },
+            {
+                "sample_id": "12_d"
+            },
+            {
+                "sample_id": "318_a"
+            },
+            {
+                "sample_id": "298_a"
+            },
+            {
+                "sample_id": "91_a"
+            },
+            {
+                "sample_id": "186_a"
+            },
+            {
+                "sample_id": "21_n"
+            },
+            {
+                "sample_id": "96_a"
+            },
+            {
+                "sample_id": "128_d"
+            },
+            {
+                "sample_id": "192_c"
+            },
+            {
+                "sample_id": "22_f"
+            },
+            {
+                "sample_id": "60_e"
+            },
+            {
+                "sample_id": "150_a"
+            },
+            {
+                "sample_id": "5_f"
+            },
+            {
+                "sample_id": "40_d"
+            },
+            {
+                "sample_id": "104_a"
+            },
+            {
+                "sample_id": "107_c"
+            },
+            {
+                "sample_id": "135_e"
+            },
+            {
+                "sample_id": "386_c"
+            },
+            {
+                "sample_id": "25_b"
+            },
+            {
+                "sample_id": "33_g"
+            },
+            {
+                "sample_id": "22_d"
+            },
+            {
+                "sample_id": "7_a"
+            },
+            {
+                "sample_id": "147_a"
+            },
+            {
+                "sample_id": "178_c"
+            },
+            {
+                "sample_id": "117_e"
+            },
+            {
+                "sample_id": "169_c"
+            },
+            {
+                "sample_id": "74_q"
+            },
+            {
+                "sample_id": "47_c"
+            },
+            {
+                "sample_id": "108_d"
+            },
+            {
+                "sample_id": "127_e"
+            },
+            {
+                "sample_id": "395_c"
+            },
+            {
+                "sample_id": "230_c"
+            },
+            {
+                "sample_id": "59_a"
+            },
+            {
+                "sample_id": "21_g"
+            },
+            {
+                "sample_id": "29_f"
+            },
+            {
+                "sample_id": "26_f"
+            },
+            {
+                "sample_id": "246_c"
+            },
+            {
+                "sample_id": "59_b"
+            },
+            {
+                "sample_id": "50_g"
+            },
+            {
+                "sample_id": "344_a"
+            },
+            {
+                "sample_id": "6_s"
+            },
+            {
+                "sample_id": "288_c"
+            },
+            {
+                "sample_id": "51_d"
+            },
+            {
+                "sample_id": "68_e"
+            },
+            {
+                "sample_id": "31_e"
+            },
+            {
+                "sample_id": "256_c"
+            },
+            {
+                "sample_id": "308_c"
+            },
+            {
+                "sample_id": "88_c"
+            },
+            {
+                "sample_id": "100_q"
+            },
+            {
+                "sample_id": "103_e"
+            },
+            {
+                "sample_id": "267_a"
+            },
+            {
+                "sample_id": "6_j"
+            },
+            {
+                "sample_id": "56_e"
+            },
+            {
+                "sample_id": "6_q"
+            },
+            {
+                "sample_id": "76_d"
+            },
+            {
+                "sample_id": "190_a"
+            },
+            {
+                "sample_id": "179_a"
+            },
+            {
+                "sample_id": "3_p"
+            },
+            {
+                "sample_id": "11_a"
+            },
+            {
+                "sample_id": "28_a"
+            },
+            {
+                "sample_id": "92_d"
+            },
+            {
+                "sample_id": "91_b"
+            },
+            {
+                "sample_id": "389_c"
+            },
+            {
+                "sample_id": "10_i"
+            },
+            {
+                "sample_id": "159_a"
+            },
+            {
+                "sample_id": "206_c"
+            },
+            {
+                "sample_id": "124_a"
+            },
+            {
+                "sample_id": "25_d"
+            },
+            {
+                "sample_id": "51_a"
+            },
+            {
+                "sample_id": "322_c"
+            },
+            {
+                "sample_id": "55_c"
+            },
+            {
+                "sample_id": "41_b"
+            },
+            {
+                "sample_id": "106_q"
+            },
+            {
+                "sample_id": "194_a"
+            },
+            {
+                "sample_id": "45_f"
+            },
+            {
+                "sample_id": "64_a"
+            },
+            {
+                "sample_id": "398_c"
+            },
+            {
+                "sample_id": "37_q"
+            },
+            {
+                "sample_id": "164_c"
+            },
+            {
+                "sample_id": "379_c"
+            },
+            {
+                "sample_id": "89_q"
+            },
+            {
+                "sample_id": "111_c"
+            },
+            {
+                "sample_id": "116_c"
+            },
+            {
+                "sample_id": "55_q"
+            },
+            {
+                "sample_id": "35_d"
+            },
+            {
+                "sample_id": "353_c"
+            },
+            {
+                "sample_id": "202_c"
+            },
+            {
+                "sample_id": "13_e"
+            },
+            {
+                "sample_id": "17_n"
+            },
+            {
+                "sample_id": "298_c"
+            },
+            {
+                "sample_id": "63_d"
+            },
+            {
+                "sample_id": "15_a"
+            },
+            {
+                "sample_id": "26_b"
+            },
+            {
+                "sample_id": "72_f"
+            },
+            {
+                "sample_id": "166_a"
+            },
+            {
+                "sample_id": "77_f"
+            },
+            {
+                "sample_id": "99_a"
+            },
+            {
+                "sample_id": "114_a"
+            },
+            {
+                "sample_id": "31_f"
+            },
+            {
+                "sample_id": "300_a"
+            },
+            {
+                "sample_id": "76_b"
+            },
+            {
+                "sample_id": "3_e"
+            },
+            {
+                "sample_id": "126_c"
+            },
+            {
+                "sample_id": "20_g"
+            },
+            {
+                "sample_id": "174_c"
+            },
+            {
+                "sample_id": "222_a"
+            },
+            {
+                "sample_id": "15_d"
+            },
+            {
+                "sample_id": "55_a"
+            },
+            {
+                "sample_id": "165_a"
+            },
+            {
+                "sample_id": "266_c"
+            },
+            {
+                "sample_id": "228_a"
+            },
+            {
+                "sample_id": "123_a"
+            },
+            {
+                "sample_id": "112_b"
+            },
+            {
+                "sample_id": "117_d"
+            },
+            {
+                "sample_id": "76_q"
+            },
+            {
+                "sample_id": "293_a"
+            },
+            {
+                "sample_id": "22_e"
+            },
+            {
+                "sample_id": "10_q"
+            },
+            {
+                "sample_id": "35_f"
+            },
+            {
+                "sample_id": "327_a"
+            },
+            {
+                "sample_id": "257_c"
+            },
+            {
+                "sample_id": "29_g"
+            },
+            {
+                "sample_id": "118_b"
+            },
+            {
+                "sample_id": "47_d"
+            },
+            {
+                "sample_id": "193_c"
+            },
+            {
+                "sample_id": "324_a"
+            },
+            {
+                "sample_id": "4_g"
+            },
+            {
+                "sample_id": "271_a"
+            },
+            {
+                "sample_id": "334_c"
+            },
+            {
+                "sample_id": "87_b"
+            },
+            {
+                "sample_id": "49_d"
+            },
+            {
+                "sample_id": "21_c"
+            },
+            {
+                "sample_id": "99_q"
+            },
+            {
+                "sample_id": "28_g"
+            },
+            {
+                "sample_id": "98_a"
+            },
+            {
+                "sample_id": "143_a"
+            },
+            {
+                "sample_id": "211_a"
+            },
+            {
+                "sample_id": "104_c"
+            },
+            {
+                "sample_id": "132_e"
+            },
+            {
+                "sample_id": "85_d"
+            },
+            {
+                "sample_id": "3_o"
+            },
+            {
+                "sample_id": "33_q"
+            },
+            {
+                "sample_id": "8_p"
+            },
+            {
+                "sample_id": "411_c"
+            },
+            {
+                "sample_id": "73_f"
+            },
+            {
+                "sample_id": "132_d"
+            },
+            {
+                "sample_id": "3_r"
+            },
+            {
+                "sample_id": "7_h"
+            },
+            {
+                "sample_id": "62_q"
+            },
+            {
+                "sample_id": "30_f"
+            },
+            {
+                "sample_id": "64_d"
+            },
+            {
+                "sample_id": "421_c"
+            },
+            {
+                "sample_id": "75_q"
+            },
+            {
+                "sample_id": "2_h"
+            },
+            {
+                "sample_id": "106_b"
+            },
+            {
+                "sample_id": "12_f"
+            },
+            {
+                "sample_id": "20_h"
+            },
+            {
+                "sample_id": "141_a"
+            },
+            {
+                "sample_id": "140_c"
+            },
+            {
+                "sample_id": "105_e"
+            },
+            {
+                "sample_id": "37_g"
+            },
+            {
+                "sample_id": "68_f"
+            },
+            {
+                "sample_id": "110_c"
+            },
+            {
+                "sample_id": "18_q"
+            },
+            {
+                "sample_id": "13_g"
+            },
+            {
+                "sample_id": "280_c"
+            },
+            {
+                "sample_id": "10_c"
+            },
+            {
+                "sample_id": "2_s"
+            },
+            {
+                "sample_id": "49_b"
+            },
+            {
+                "sample_id": "87_d"
+            },
+            {
+                "sample_id": "7_e"
+            },
+            {
+                "sample_id": "257_a"
+            },
+            {
+                "sample_id": "157_a"
+            },
+            {
+                "sample_id": "68_q"
+            },
+            {
+                "sample_id": "244_a"
+            },
+            {
+                "sample_id": "164_a"
+            },
+            {
+                "sample_id": "8_e"
+            },
+            {
+                "sample_id": "46_q"
+            },
+            {
+                "sample_id": "48_c"
+            },
+            {
+                "sample_id": "16_e"
+            },
+            {
+                "sample_id": "371_c"
+            },
+            {
+                "sample_id": "131_c"
+            },
+            {
+                "sample_id": "72_c"
+            },
+            {
+                "sample_id": "110_e"
+            },
+            {
+                "sample_id": "5_g"
+            },
+            {
+                "sample_id": "61_d"
+            },
+            {
+                "sample_id": "148_c"
+            },
+            {
+                "sample_id": "83_q"
+            },
+            {
+                "sample_id": "114_d"
+            },
+            {
+                "sample_id": "3_b"
+            },
+            {
+                "sample_id": "108_q"
+            },
+            {
+                "sample_id": "3_j"
+            },
+            {
+                "sample_id": "223_a"
+            },
+            {
+                "sample_id": "30_n"
+            },
+            {
+                "sample_id": "191_c"
+            },
+            {
+                "sample_id": "337_c"
+            },
+            {
+                "sample_id": "84_b"
+            },
+            {
+                "sample_id": "235_c"
+            },
+            {
+                "sample_id": "150_c"
+            },
+            {
+                "sample_id": "94_e"
+            },
+            {
+                "sample_id": "281_c"
+            },
+            {
+                "sample_id": "115_c"
+            },
+            {
+                "sample_id": "34_q"
+            },
+            {
+                "sample_id": "252_a"
+            },
+            {
+                "sample_id": "1_a"
+            },
+            {
+                "sample_id": "270_a"
+            },
+            {
+                "sample_id": "12_h"
+            },
+            {
+                "sample_id": "4_n"
+            },
+            {
+                "sample_id": "30_a"
+            },
+            {
+                "sample_id": "21_h"
+            },
+            {
+                "sample_id": "46_a"
+            },
+            {
+                "sample_id": "11_g"
+            },
+            {
+                "sample_id": "42_a"
+            },
+            {
+                "sample_id": "2_i"
+            },
+            {
+                "sample_id": "112_e"
+            },
+            {
+                "sample_id": "118_q"
+            },
+            {
+                "sample_id": "60_a"
+            },
+            {
+                "sample_id": "0_a"
+            },
+            {
+                "sample_id": "55_b"
+            },
+            {
+                "sample_id": "57_e"
+            },
+            {
+                "sample_id": "73_a"
+            },
+            {
+                "sample_id": "345_a"
+            },
+            {
+                "sample_id": "3_h"
+            },
+            {
+                "sample_id": "14_f"
+            },
+            {
+                "sample_id": "29_q"
+            },
+            {
+                "sample_id": "68_c"
+            },
+            {
+                "sample_id": "134_a"
+            },
+            {
+                "sample_id": "108_e"
+            },
+            {
+                "sample_id": "56_d"
+            },
+            {
+                "sample_id": "101_d"
+            },
+            {
+                "sample_id": "13_q"
+            },
+            {
+                "sample_id": "215_a"
+            },
+            {
+                "sample_id": "30_g"
+            },
+            {
+                "sample_id": "32_b"
+            },
+            {
+                "sample_id": "191_a"
+            },
+            {
+                "sample_id": "212_a"
+            },
+            {
+                "sample_id": "41_f"
+            },
+            {
+                "sample_id": "41_e"
+            },
+            {
+                "sample_id": "89_a"
+            },
+            {
+                "sample_id": "238_c"
+            },
+            {
+                "sample_id": "91_c"
+            },
+            {
+                "sample_id": "195_c"
+            },
+            {
+                "sample_id": "166_d"
+            },
+            {
+                "sample_id": "160_a"
+            },
+            {
+                "sample_id": "95_e"
+            },
+            {
+                "sample_id": "75_b"
+            },
+            {
+                "sample_id": "160_d"
+            },
+            {
+                "sample_id": "69_c"
+            },
+            {
+                "sample_id": "89_b"
+            },
+            {
+                "sample_id": "234_a"
+            },
+            {
+                "sample_id": "61_f"
+            },
+            {
+                "sample_id": "140_d"
+            },
+            {
+                "sample_id": "360_c"
+            },
+            {
+                "sample_id": "51_e"
+            },
+            {
+                "sample_id": "29_b"
+            },
+            {
+                "sample_id": "57_b"
+            },
+            {
+                "sample_id": "100_e"
+            },
+            {
+                "sample_id": "79_a"
+            },
+            {
+                "sample_id": "6_b"
+            },
+            {
+                "sample_id": "64_e"
+            },
+            {
+                "sample_id": "41_d"
+            },
+            {
+                "sample_id": "139_e"
+            },
+            {
+                "sample_id": "390_c"
+            },
+            {
+                "sample_id": "95_q"
+            },
+            {
+                "sample_id": "45_b"
+            },
+            {
+                "sample_id": "23_e"
+            },
+            {
+                "sample_id": "97_q"
+            },
+            {
+                "sample_id": "44_e"
+            },
+            {
+                "sample_id": "378_c"
+            },
+            {
+                "sample_id": "285_c"
+            },
+            {
+                "sample_id": "51_b"
+            },
+            {
+                "sample_id": "2_r"
+            },
+            {
+                "sample_id": "9_d"
+            },
+            {
+                "sample_id": "50_a"
+            },
+            {
+                "sample_id": "7_m"
+            },
+            {
+                "sample_id": "3_m"
+            },
+            {
+                "sample_id": "394_c"
+            },
+            {
+                "sample_id": "17_b"
+            },
+            {
+                "sample_id": "67_q"
+            },
+            {
+                "sample_id": "37_d"
+            },
+            {
+                "sample_id": "182_a"
+            },
+            {
+                "sample_id": "127_c"
+            },
+            {
+                "sample_id": "84_e"
+            },
+            {
+                "sample_id": "10_b"
+            },
+            {
+                "sample_id": "314_a"
+            },
+            {
+                "sample_id": "207_c"
+            },
+            {
+                "sample_id": "249_a"
+            },
+            {
+                "sample_id": "22_c"
+            },
+            {
+                "sample_id": "408_c"
+            },
+            {
+                "sample_id": "23_n"
+            },
+            {
+                "sample_id": "8_c"
+            },
+            {
+                "sample_id": "236_c"
+            },
+            {
+                "sample_id": "39_q"
+            },
+            {
+                "sample_id": "79_e"
+            },
+            {
+                "sample_id": "23_q"
+            },
+            {
+                "sample_id": "242_c"
+            },
+            {
+                "sample_id": "332_a"
+            },
+            {
+                "sample_id": "89_e"
+            },
+            {
+                "sample_id": "283_c"
+            },
+            {
+                "sample_id": "71_a"
+            },
+            {
+                "sample_id": "59_c"
+            },
+            {
+                "sample_id": "34_d"
+            },
+            {
+                "sample_id": "306_c"
+            },
+            {
+                "sample_id": "65_e"
+            },
+            {
+                "sample_id": "415_c"
+            },
+            {
+                "sample_id": "15_q"
+            },
+            {
+                "sample_id": "95_b"
+            },
+            {
+                "sample_id": "263_c"
+            },
+            {
+                "sample_id": "129_e"
+            },
+            {
+                "sample_id": "75_c"
+            },
+            {
+                "sample_id": "26_e"
+            },
+            {
+                "sample_id": "114_c"
+            },
+            {
+                "sample_id": "258_c"
+            },
+            {
+                "sample_id": "216_a"
+            },
+            {
+                "sample_id": "75_f"
+            },
+            {
+                "sample_id": "26_a"
+            },
+            {
+                "sample_id": "216_c"
+            },
+            {
+                "sample_id": "90_c"
+            },
+            {
+                "sample_id": "285_a"
+            },
+            {
+                "sample_id": "312_c"
+            },
+            {
+                "sample_id": "8_s"
+            },
+            {
+                "sample_id": "249_c"
+            },
+            {
+                "sample_id": "154_c"
+            },
+            {
+                "sample_id": "49_q"
+            },
+            {
+                "sample_id": "137_a"
+            },
+            {
+                "sample_id": "48_b"
+            },
+            {
+                "sample_id": "1_k"
+            },
+            {
+                "sample_id": "102_e"
+            },
+            {
+                "sample_id": "365_c"
+            },
+            {
+                "sample_id": "66_d"
+            },
+            {
+                "sample_id": "5_o"
+            },
+            {
+                "sample_id": "296_a"
+            },
+            {
+                "sample_id": "289_a"
+            },
+            {
+                "sample_id": "334_a"
+            },
+            {
+                "sample_id": "405_c"
+            },
+            {
+                "sample_id": "77_q"
+            },
+            {
+                "sample_id": "8_m"
+            },
+            {
+                "sample_id": "19_b"
+            },
+            {
+                "sample_id": "38_e"
+            },
+            {
+                "sample_id": "36_a"
+            },
+            {
+                "sample_id": "35_q"
+            },
+            {
+                "sample_id": "88_q"
+            },
+            {
+                "sample_id": "100_d"
+            },
+            {
+                "sample_id": "148_d"
+            },
+            {
+                "sample_id": "262_a"
+            },
+            {
+                "sample_id": "303_c"
+            },
+            {
+                "sample_id": "49_a"
+            },
+            {
+                "sample_id": "41_a"
+            },
+            {
+                "sample_id": "83_d"
+            },
+            {
+                "sample_id": "173_c"
+            },
+            {
+                "sample_id": "40_q"
+            },
+            {
+                "sample_id": "42_e"
+            },
+            {
+                "sample_id": "279_c"
+            },
+            {
+                "sample_id": "165_c"
+            },
+            {
+                "sample_id": "176_d"
+            },
+            {
+                "sample_id": "75_a"
+            },
+            {
+                "sample_id": "78_e"
+            },
+            {
+                "sample_id": "116_a"
+            },
+            {
+                "sample_id": "287_a"
+            },
+            {
+                "sample_id": "209_c"
+            },
+            {
+                "sample_id": "311_c"
+            },
+            {
+                "sample_id": "90_e"
+            },
+            {
+                "sample_id": "93_q"
+            },
+            {
+                "sample_id": "33_d"
+            },
+            {
+                "sample_id": "38_c"
+            },
+            {
+                "sample_id": "26_c"
+            },
+            {
+                "sample_id": "9_i"
+            },
+            {
+                "sample_id": "168_d"
+            },
+            {
+                "sample_id": "43_q"
+            },
+            {
+                "sample_id": "79_q"
+            },
+            {
+                "sample_id": "424_c"
+            },
+            {
+                "sample_id": "140_a"
+            },
+            {
+                "sample_id": "90_q"
+            },
+            {
+                "sample_id": "8_d"
+            },
+            {
+                "sample_id": "64_q"
+            },
+            {
+                "sample_id": "262_c"
+            },
+            {
+                "sample_id": "276_c"
+            },
+            {
+                "sample_id": "126_a"
+            },
+            {
+                "sample_id": "338_a"
+            },
+            {
+                "sample_id": "369_c"
+            },
+            {
+                "sample_id": "15_b"
+            },
+            {
+                "sample_id": "40_c"
+            },
+            {
+                "sample_id": "217_c"
+            },
+            {
+                "sample_id": "2_q"
+            },
+            {
+                "sample_id": "138_c"
+            },
+            {
+                "sample_id": "153_a"
+            },
+            {
+                "sample_id": "52_c"
+            },
+            {
+                "sample_id": "188_a"
+            },
+            {
+                "sample_id": "310_a"
+            },
+            {
+                "sample_id": "95_c"
+            },
+            {
+                "sample_id": "101_a"
+            },
+            {
+                "sample_id": "250_c"
+            },
+            {
+                "sample_id": "0_i"
+            },
+            {
+                "sample_id": "97_b"
+            },
+            {
+                "sample_id": "157_c"
+            },
+            {
+                "sample_id": "50_f"
+            },
+            {
+                "sample_id": "171_c"
+            },
+            {
+                "sample_id": "163_a"
+            },
+            {
+                "sample_id": "58_b"
+            },
+            {
+                "sample_id": "17_c"
+            },
+            {
+                "sample_id": "81_d"
+            },
+            {
+                "sample_id": "88_a"
+            },
+            {
+                "sample_id": "138_d"
+            },
+            {
+                "sample_id": "141_d"
+            },
+            {
+                "sample_id": "105_a"
+            },
+            {
+                "sample_id": "104_q"
+            },
+            {
+                "sample_id": "26_n"
+            },
+            {
+                "sample_id": "109_d"
+            },
+            {
+                "sample_id": "102_a"
+            },
+            {
+                "sample_id": "73_b"
+            },
+            {
+                "sample_id": "0_g"
+            },
+            {
+                "sample_id": "132_a"
+            },
+            {
+                "sample_id": "19_d"
+            },
+            {
+                "sample_id": "337_a"
+            },
+            {
+                "sample_id": "81_q"
+            },
+            {
+                "sample_id": "115_d"
+            },
+            {
+                "sample_id": "238_a"
+            },
+            {
+                "sample_id": "10_d"
+            },
+            {
+                "sample_id": "136_d"
+            },
+            {
+                "sample_id": "71_c"
+            },
+            {
+                "sample_id": "44_a"
+            },
+            {
+                "sample_id": "77_c"
+            },
+            {
+                "sample_id": "53_f"
+            },
+            {
+                "sample_id": "182_c"
+            },
+            {
+                "sample_id": "2_p"
+            },
+            {
+                "sample_id": "144_c"
+            },
+            {
+                "sample_id": "115_e"
+            },
+            {
+                "sample_id": "2_e"
+            },
+            {
+                "sample_id": "104_e"
+            },
+            {
+                "sample_id": "336_a"
+            },
+            {
+                "sample_id": "96_d"
+            },
+            {
+                "sample_id": "36_g"
+            },
+            {
+                "sample_id": "88_b"
+            },
+            {
+                "sample_id": "6_f"
+            },
+            {
+                "sample_id": "175_c"
+            },
+            {
+                "sample_id": "278_c"
+            },
+            {
+                "sample_id": "157_d"
+            },
+            {
+                "sample_id": "113_c"
+            },
+            {
+                "sample_id": "98_b"
+            },
+            {
+                "sample_id": "4_m"
+            },
+            {
+                "sample_id": "197_c"
+            },
+            {
+                "sample_id": "120_c"
+            },
+            {
+                "sample_id": "82_c"
+            },
+            {
+                "sample_id": "70_e"
+            },
+            {
+                "sample_id": "38_f"
+            },
+            {
+                "sample_id": "5_i"
+            },
+            {
+                "sample_id": "11_q"
+            },
+            {
+                "sample_id": "241_a"
+            },
+            {
+                "sample_id": "342_c"
+            },
+            {
+                "sample_id": "59_q"
+            },
+            {
+                "sample_id": "7_n"
+            },
+            {
+                "sample_id": "4_b"
+            },
+            {
+                "sample_id": "420_c"
+            },
+            {
+                "sample_id": "258_a"
+            },
+            {
+                "sample_id": "90_a"
+            },
+            {
+                "sample_id": "163_d"
+            },
+            {
+                "sample_id": "425_c"
+            },
+            {
+                "sample_id": "410_c"
+            },
+            {
+                "sample_id": "279_a"
+            },
+            {
+                "sample_id": "28_e"
+            },
+            {
+                "sample_id": "198_a"
+            },
+            {
+                "sample_id": "214_c"
+            },
+            {
+                "sample_id": "284_a"
+            },
+            {
+                "sample_id": "361_c"
+            },
+            {
+                "sample_id": "34_e"
+            },
+            {
+                "sample_id": "0_h"
+            },
+            {
+                "sample_id": "13_i"
+            },
+            {
+                "sample_id": "109_c"
+            },
+            {
+                "sample_id": "6_n"
+            },
+            {
+                "sample_id": "229_a"
+            },
+            {
+                "sample_id": "33_e"
+            },
+            {
+                "sample_id": "10_h"
+            },
+            {
+                "sample_id": "4_e"
+            },
+            {
+                "sample_id": "20_q"
+            },
+            {
+                "sample_id": "174_a"
+            },
+            {
+                "sample_id": "217_a"
+            },
+            {
+                "sample_id": "51_q"
+            },
+            {
+                "sample_id": "134_e"
+            },
+            {
+                "sample_id": "380_c"
+            },
+            {
+                "sample_id": "49_c"
+            },
+            {
+                "sample_id": "25_c"
+            },
+            {
+                "sample_id": "109_b"
+            },
+            {
+                "sample_id": "384_c"
+            },
+            {
+                "sample_id": "1_l"
+            },
+            {
+                "sample_id": "277_c"
+            },
+            {
+                "sample_id": "11_h"
+            },
+            {
+                "sample_id": "130_d"
+            },
+            {
+                "sample_id": "242_a"
+            },
+            {
+                "sample_id": "14_n"
+            },
+            {
+                "sample_id": "94_a"
+            },
+            {
+                "sample_id": "123_c"
+            },
+            {
+                "sample_id": "25_a"
+            },
+            {
+                "sample_id": "0_o"
+            },
+            {
+                "sample_id": "135_a"
+            },
+            {
+                "sample_id": "345_c"
+            },
+            {
+                "sample_id": "94_b"
+            },
+            {
+                "sample_id": "64_f"
+            },
+            {
+                "sample_id": "112_a"
+            },
+            {
+                "sample_id": "9_h"
+            },
+            {
+                "sample_id": "54_a"
+            },
+            {
+                "sample_id": "225_a"
+            },
+            {
+                "sample_id": "270_c"
+            },
+            {
+                "sample_id": "326_c"
+            },
+            {
+                "sample_id": "4_o"
+            },
+            {
+                "sample_id": "40_f"
+            },
+            {
+                "sample_id": "275_c"
+            },
+            {
+                "sample_id": "74_f"
+            },
+            {
+                "sample_id": "1_e"
+            },
+            {
+                "sample_id": "93_e"
+            },
+            {
+                "sample_id": "158_c"
+            },
+            {
+                "sample_id": "145_c"
+            },
+            {
+                "sample_id": "221_a"
+            },
+            {
+                "sample_id": "149_c"
+            },
+            {
+                "sample_id": "292_c"
+            },
+            {
+                "sample_id": "151_c"
+            },
+            {
+                "sample_id": "81_e"
+            },
+            {
+                "sample_id": "145_d"
+            },
+            {
+                "sample_id": "325_c"
+            },
+            {
+                "sample_id": "399_c"
+            },
+            {
+                "sample_id": "70_d"
+            },
+            {
+                "sample_id": "58_a"
+            },
+            {
+                "sample_id": "63_e"
+            },
+            {
+                "sample_id": "193_a"
+            },
+            {
+                "sample_id": "289_c"
+            },
+            {
+                "sample_id": "266_a"
+            },
+            {
+                "sample_id": "13_d"
+            },
+            {
+                "sample_id": "413_c"
+            },
+            {
+                "sample_id": "267_c"
+            },
+            {
+                "sample_id": "22_n"
+            },
+            {
+                "sample_id": "175_d"
+            },
+            {
+                "sample_id": "65_q"
+            },
+            {
+                "sample_id": "218_a"
+            },
+            {
+                "sample_id": "71_b"
+            },
+            {
+                "sample_id": "26_q"
+            },
+            {
+                "sample_id": "200_a"
+            },
+            {
+                "sample_id": "280_a"
+            },
+            {
+                "sample_id": "227_c"
+            },
+            {
+                "sample_id": "80_b"
+            },
+            {
+                "sample_id": "31_c"
+            },
+            {
+                "sample_id": "54_q"
+            },
+            {
+                "sample_id": "185_c"
+            },
+            {
+                "sample_id": "82_a"
+            },
+            {
+                "sample_id": "4_f"
+            },
+            {
+                "sample_id": "122_c"
+            },
+            {
+                "sample_id": "96_b"
+            },
+            {
+                "sample_id": "205_c"
+            },
+            {
+                "sample_id": "177_d"
+            },
+            {
+                "sample_id": "34_g"
+            },
+            {
+                "sample_id": "205_a"
+            },
+            {
+                "sample_id": "12_a"
+            },
+            {
+                "sample_id": "5_h"
+            },
+            {
+                "sample_id": "159_d"
+            },
+            {
+                "sample_id": "0_r"
+            },
+            {
+                "sample_id": "137_e"
+            },
+            {
+                "sample_id": "6_e"
+            },
+            {
+                "sample_id": "41_q"
+            },
+            {
+                "sample_id": "5_n"
+            },
+            {
+                "sample_id": "147_c"
+            },
+            {
+                "sample_id": "13_b"
+            },
+            {
+                "sample_id": "61_q"
+            },
+            {
+                "sample_id": "260_c"
+            },
+            {
+                "sample_id": "220_a"
+            },
+            {
+                "sample_id": "4_i"
+            },
+            {
+                "sample_id": "36_b"
+            },
+            {
+                "sample_id": "78_d"
+            },
+            {
+                "sample_id": "414_c"
+            },
+            {
+                "sample_id": "215_c"
+            },
+            {
+                "sample_id": "174_d"
+            },
+            {
+                "sample_id": "46_g"
+            },
+            {
+                "sample_id": "22_g"
+            },
+            {
+                "sample_id": "196_a"
+            },
+            {
+                "sample_id": "109_e"
+            },
+            {
+                "sample_id": "83_c"
+            },
+            {
+                "sample_id": "118_e"
+            },
+            {
+                "sample_id": "36_f"
+            },
+            {
+                "sample_id": "189_c"
+            },
+            {
+                "sample_id": "47_q"
+            },
+            {
+                "sample_id": "92_b"
+            },
+            {
+                "sample_id": "161_d"
+            },
+            {
+                "sample_id": "176_a"
+            },
+            {
+                "sample_id": "112_c"
+            },
+            {
+                "sample_id": "237_c"
+            },
+            {
+                "sample_id": "38_d"
+            },
+            {
+                "sample_id": "114_b"
+            },
+            {
+                "sample_id": "16_c"
+            },
+            {
+                "sample_id": "281_a"
+            },
+            {
+                "sample_id": "52_b"
+            },
+            {
+                "sample_id": "80_e"
+            },
+            {
+                "sample_id": "143_d"
+            },
+            {
+                "sample_id": "227_a"
+            },
+            {
+                "sample_id": "2_n"
+            },
+            {
+                "sample_id": "31_q"
+            },
+            {
+                "sample_id": "54_f"
+            },
+            {
+                "sample_id": "283_a"
+            },
+            {
+                "sample_id": "134_c"
+            },
+            {
+                "sample_id": "5_e"
+            },
+            {
+                "sample_id": "115_a"
+            },
+            {
+                "sample_id": "16_h"
+            },
+            {
+                "sample_id": "92_q"
+            },
+            {
+                "sample_id": "34_a"
+            },
+            {
+                "sample_id": "53_b"
+            },
+            {
+                "sample_id": "366_c"
+            },
+            {
+                "sample_id": "69_e"
+            },
+            {
+                "sample_id": "13_h"
+            },
+            {
+                "sample_id": "57_q"
+            },
+            {
+                "sample_id": "113_q"
+            },
+            {
+                "sample_id": "208_c"
+            },
+            {
+                "sample_id": "1_i"
+            },
+            {
+                "sample_id": "348_a"
+            },
+            {
+                "sample_id": "165_d"
+            },
+            {
+                "sample_id": "63_c"
+            },
+            {
+                "sample_id": "9_a"
+            },
+            {
+                "sample_id": "59_e"
+            },
+            {
+                "sample_id": "417_c"
+            },
+            {
+                "sample_id": "84_q"
+            },
+            {
+                "sample_id": "69_a"
+            },
+            {
+                "sample_id": "6_c"
+            },
+            {
+                "sample_id": "94_q"
+            },
+            {
+                "sample_id": "291_c"
+            },
+            {
+                "sample_id": "80_c"
+            },
+            {
+                "sample_id": "233_a"
+            },
+            {
+                "sample_id": "99_e"
+            },
+            {
+                "sample_id": "294_a"
+            },
+            {
+                "sample_id": "269_a"
+            },
+            {
+                "sample_id": "1_r"
+            },
+            {
+                "sample_id": "129_d"
+            },
+            {
+                "sample_id": "82_d"
+            },
+            {
+                "sample_id": "2_a"
+            },
+            {
+                "sample_id": "11_e"
+            },
+            {
+                "sample_id": "264_c"
+            },
+            {
+                "sample_id": "301_a"
+            },
+            {
+                "sample_id": "92_c"
+            },
+            {
+                "sample_id": "75_e"
+            },
+            {
+                "sample_id": "22_a"
+            },
+            {
+                "sample_id": "66_f"
+            },
+            {
+                "sample_id": "0_n"
+            },
+            {
+                "sample_id": "344_c"
+            },
+            {
+                "sample_id": "181_c"
+            },
+            {
+                "sample_id": "11_c"
+            },
+            {
+                "sample_id": "333_c"
+            },
+            {
+                "sample_id": "246_a"
+            },
+            {
+                "sample_id": "416_c"
+            },
+            {
+                "sample_id": "374_c"
+            },
+            {
+                "sample_id": "25_e"
+            },
+            {
+                "sample_id": "64_c"
+            },
+            {
+                "sample_id": "87_e"
+            },
+            {
+                "sample_id": "3_c"
+            },
+            {
+                "sample_id": "150_e"
+            },
+            {
+                "sample_id": "3_q"
+            },
+            {
+                "sample_id": "133_a"
+            },
+            {
+                "sample_id": "363_c"
+            },
+            {
+                "sample_id": "160_c"
+            },
+            {
+                "sample_id": "28_b"
+            },
+            {
+                "sample_id": "376_c"
+            },
+            {
+                "sample_id": "117_c"
+            },
+            {
+                "sample_id": "142_c"
+            },
+            {
+                "sample_id": "0_j"
+            },
+            {
+                "sample_id": "21_e"
+            },
+            {
+                "sample_id": "9_c"
+            },
+            {
+                "sample_id": "24_g"
+            },
+            {
+                "sample_id": "58_d"
+            },
+            {
+                "sample_id": "287_c"
+            },
+            {
+                "sample_id": "126_d"
+            },
+            {
+                "sample_id": "74_a"
+            },
+            {
+                "sample_id": "18_c"
+            },
+            {
+                "sample_id": "124_d"
+            },
+            {
+                "sample_id": "256_a"
+            },
+            {
+                "sample_id": "72_b"
+            },
+            {
+                "sample_id": "61_e"
+            },
+            {
+                "sample_id": "61_c"
+            },
+            {
+                "sample_id": "127_a"
+            },
+            {
+                "sample_id": "7_o"
+            },
+            {
+                "sample_id": "16_d"
+            },
+            {
+                "sample_id": "44_b"
+            },
+            {
+                "sample_id": "86_a"
+            },
+            {
+                "sample_id": "29_e"
+            },
+            {
+                "sample_id": "31_a"
+            },
+            {
+                "sample_id": "208_a"
+            },
+            {
+                "sample_id": "33_f"
+            },
+            {
+                "sample_id": "118_d"
+            },
+            {
+                "sample_id": "317_c"
+            },
+            {
+                "sample_id": "88_d"
+            },
+            {
+                "sample_id": "40_b"
+            },
+            {
+                "sample_id": "39_c"
+            },
+            {
+                "sample_id": "114_q"
+            },
+            {
+                "sample_id": "61_b"
+            },
+            {
+                "sample_id": "12_b"
+            },
+            {
+                "sample_id": "347_c"
+            },
+            {
+                "sample_id": "187_c"
+            },
+            {
+                "sample_id": "260_a"
+            },
+            {
+                "sample_id": "403_c"
+            },
+            {
+                "sample_id": "85_e"
+            },
+            {
+                "sample_id": "185_a"
+            },
+            {
+                "sample_id": "6_r"
+            },
+            {
+                "sample_id": "303_a"
+            },
+            {
+                "sample_id": "211_c"
+            },
+            {
+                "sample_id": "219_c"
+            },
+            {
+                "sample_id": "16_f"
+            },
+            {
+                "sample_id": "65_c"
+            },
+            {
+                "sample_id": "199_c"
+            },
+            {
+                "sample_id": "89_c"
+            },
+            {
+                "sample_id": "98_c"
+            },
+            {
+                "sample_id": "67_d"
+            },
+            {
+                "sample_id": "171_a"
+            },
+            {
+                "sample_id": "55_e"
+            },
+            {
+                "sample_id": "229_c"
+            },
+            {
+                "sample_id": "50_d"
+            },
+            {
+                "sample_id": "30_b"
+            },
+            {
+                "sample_id": "122_a"
+            },
+            {
+                "sample_id": "21_f"
+            },
+            {
+                "sample_id": "116_q"
+            },
+            {
+                "sample_id": "56_a"
+            },
+            {
+                "sample_id": "269_c"
+            },
+            {
+                "sample_id": "57_d"
+            },
+            {
+                "sample_id": "28_n"
+            },
+            {
+                "sample_id": "26_g"
+            },
+            {
+                "sample_id": "382_c"
+            },
+            {
+                "sample_id": "194_c"
+            },
+            {
+                "sample_id": "17_h"
+            },
+            {
+                "sample_id": "290_a"
+            },
+            {
+                "sample_id": "15_n"
+            },
+            {
+                "sample_id": "397_c"
+            },
+            {
+                "sample_id": "9_s"
+            },
+            {
+                "sample_id": "19_n"
+            },
+            {
+                "sample_id": "75_d"
+            },
+            {
+                "sample_id": "65_d"
+            },
+            {
+                "sample_id": "155_c"
+            },
+            {
+                "sample_id": "38_g"
+            },
+            {
+                "sample_id": "236_a"
+            },
+            {
+                "sample_id": "62_b"
+            },
+            {
+                "sample_id": "261_c"
+            },
+            {
+                "sample_id": "5_m"
+            },
+            {
+                "sample_id": "102_b"
+            },
+            {
+                "sample_id": "93_c"
+            },
+            {
+                "sample_id": "79_d"
+            },
+            {
+                "sample_id": "381_c"
+            },
+            {
+                "sample_id": "68_a"
+            },
+            {
+                "sample_id": "368_c"
+            },
+            {
+                "sample_id": "284_c"
+            },
+            {
+                "sample_id": "316_a"
+            },
+            {
+                "sample_id": "144_d"
+            },
+            {
+                "sample_id": "33_a"
+            },
+            {
+                "sample_id": "422_c"
+            },
+            {
+                "sample_id": "91_e"
+            },
+            {
+                "sample_id": "38_b"
+            },
+            {
+                "sample_id": "48_q"
+            },
+            {
+                "sample_id": "23_f"
+            },
+            {
+                "sample_id": "15_g"
+            },
+            {
+                "sample_id": "101_q"
+            },
+            {
+                "sample_id": "125_e"
+            },
+            {
+                "sample_id": "32_f"
+            },
+            {
+                "sample_id": "1_f"
+            },
+            {
+                "sample_id": "3_n"
+            },
+            {
+                "sample_id": "86_b"
+            },
+            {
+                "sample_id": "304_c"
+            },
+            {
+                "sample_id": "133_e"
+            },
+            {
+                "sample_id": "38_q"
+            },
+            {
+                "sample_id": "252_c"
+            },
+            {
+                "sample_id": "299_c"
+            },
+            {
+                "sample_id": "139_d"
+            },
+            {
+                "sample_id": "364_c"
+            },
+            {
+                "sample_id": "139_c"
+            },
+            {
+                "sample_id": "271_c"
+            },
+            {
+                "sample_id": "29_c"
+            },
+            {
+                "sample_id": "274_a"
+            },
+            {
+                "sample_id": "278_a"
+            },
+            {
+                "sample_id": "67_f"
+            },
+            {
+                "sample_id": "99_b"
+            },
+            {
+                "sample_id": "357_c"
+            },
+            {
+                "sample_id": "253_c"
+            },
+            {
+                "sample_id": "30_q"
+            },
+            {
+                "sample_id": "120_a"
+            },
+            {
+                "sample_id": "121_d"
+            },
+            {
+                "sample_id": "292_a"
+            },
+            {
+                "sample_id": "103_q"
+            },
+            {
+                "sample_id": "24_n"
+            },
+            {
+                "sample_id": "27_c"
+            },
+            {
+                "sample_id": "254_a"
+            },
+            {
+                "sample_id": "3_i"
+            },
+            {
+                "sample_id": "4_a"
+            },
+            {
+                "sample_id": "55_d"
+            },
+            {
+                "sample_id": "27_a"
+            },
+            {
+                "sample_id": "35_e"
+            },
+            {
+                "sample_id": "113_a"
+            },
+            {
+                "sample_id": "6_h"
+            },
+            {
+                "sample_id": "47_b"
+            },
+            {
+                "sample_id": "20_a"
+            },
+            {
+                "sample_id": "13_f"
+            },
+            {
+                "sample_id": "60_c"
+            },
+            {
+                "sample_id": "5_c"
+            },
+            {
+                "sample_id": "2_o"
+            },
+            {
+                "sample_id": "40_a"
+            },
+            {
+                "sample_id": "16_q"
+            },
+            {
+                "sample_id": "62_c"
+            },
+            {
+                "sample_id": "239_c"
+            },
+            {
+                "sample_id": "235_a"
+            },
+            {
+                "sample_id": "232_c"
+            },
+            {
+                "sample_id": "156_c"
+            },
+            {
+                "sample_id": "86_d"
+            },
+            {
+                "sample_id": "49_f"
+            },
+            {
+                "sample_id": "119_b"
+            },
+            {
+                "sample_id": "426_c"
+            },
+            {
+                "sample_id": "58_q"
+            },
+            {
+                "sample_id": "70_b"
+            },
+            {
+                "sample_id": "29_d"
+            },
+            {
+                "sample_id": "349_a"
+            },
+            {
+                "sample_id": "140_e"
+            },
+            {
+                "sample_id": "47_a"
+            },
+            {
+                "sample_id": "302_c"
+            },
+            {
+                "sample_id": "32_g"
+            },
+            {
+                "sample_id": "53_a"
+            },
+            {
+                "sample_id": "203_a"
+            },
+            {
+                "sample_id": "131_a"
+            },
+            {
+                "sample_id": "226_c"
+            },
+            {
+                "sample_id": "230_a"
+            },
+            {
+                "sample_id": "170_a"
+            },
+            {
+                "sample_id": "226_a"
+            },
+            {
+                "sample_id": "98_e"
+            },
+            {
+                "sample_id": "6_m"
+            },
+            {
+                "sample_id": "348_c"
+            },
+            {
+                "sample_id": "178_a"
+            },
+            {
+                "sample_id": "156_d"
+            },
+            {
+                "sample_id": "91_d"
+            },
+            {
+                "sample_id": "136_a"
+            },
+            {
+                "sample_id": "400_c"
+            },
+            {
+                "sample_id": "99_d"
+            },
+            {
+                "sample_id": "85_c"
+            },
+            {
+                "sample_id": "57_c"
+            },
+            {
+                "sample_id": "34_f"
+            },
+            {
+                "sample_id": "308_a"
+            },
+            {
+                "sample_id": "34_c"
+            },
+            {
+                "sample_id": "5_q"
+            },
+            {
+                "sample_id": "341_a"
+            },
+            {
+                "sample_id": "164_d"
+            },
+            {
+                "sample_id": "358_c"
+            },
+            {
+                "sample_id": "60_q"
+            },
+            {
+                "sample_id": "56_b"
+            },
+            {
+                "sample_id": "67_a"
+            },
+            {
+                "sample_id": "39_e"
+            },
+            {
+                "sample_id": "161_c"
+            },
+            {
+                "sample_id": "39_f"
+            },
+            {
+                "sample_id": "412_c"
+            },
+            {
+                "sample_id": "274_c"
+            },
+            {
+                "sample_id": "204_c"
+            },
+            {
+                "sample_id": "142_e"
+            },
+            {
+                "sample_id": "71_f"
+            },
+            {
+                "sample_id": "295_a"
+            },
+            {
+                "sample_id": "81_b"
+            },
+            {
+                "sample_id": "201_c"
+            },
+            {
+                "sample_id": "36_c"
+            },
+            {
+                "sample_id": "23_c"
+            },
+            {
+                "sample_id": "64_b"
+            },
+            {
+                "sample_id": "156_a"
+            },
+            {
+                "sample_id": "33_b"
+            },
+            {
+                "sample_id": "130_e"
+            },
+            {
+                "sample_id": "27_d"
+            },
+            {
+                "sample_id": "107_e"
+            },
+            {
+                "sample_id": "107_d"
+            },
+            {
+                "sample_id": "53_c"
+            },
+            {
+                "sample_id": "100_b"
+            },
+            {
+                "sample_id": "30_e"
+            },
+            {
+                "sample_id": "6_p"
+            },
+            {
+                "sample_id": "50_b"
+            },
+            {
+                "sample_id": "25_g"
+            },
+            {
+                "sample_id": "5_r"
+            },
+            {
+                "sample_id": "293_c"
+            },
+            {
+                "sample_id": "24_b"
+            },
+            {
+                "sample_id": "10_a"
+            },
+            {
+                "sample_id": "78_b"
+            },
+            {
+                "sample_id": "354_c"
+            },
+            {
+                "sample_id": "82_q"
+            },
+            {
+                "sample_id": "69_b"
+            },
+            {
+                "sample_id": "27_e"
+            },
+            {
+                "sample_id": "142_d"
+            },
+            {
+                "sample_id": "0_e"
+            },
+            {
+                "sample_id": "51_c"
+            },
+            {
+                "sample_id": "8_o"
+            },
+            {
+                "sample_id": "98_q"
+            },
+            {
+                "sample_id": "78_a"
+            },
+            {
+                "sample_id": "70_a"
+            },
+            {
+                "sample_id": "115_q"
+            },
+            {
+                "sample_id": "312_a"
+            },
+            {
+                "sample_id": "42_q"
+            },
+            {
+                "sample_id": "32_e"
+            },
+            {
+                "sample_id": "74_b"
+            },
+            {
+                "sample_id": "113_d"
+            },
+            {
+                "sample_id": "66_q"
+            },
+            {
+                "sample_id": "74_e"
+            },
+            {
+                "sample_id": "52_q"
+            },
+            {
+                "sample_id": "7_p"
+            },
+            {
+                "sample_id": "11_d"
+            },
+            {
+                "sample_id": "82_b"
+            },
+            {
+                "sample_id": "45_q"
+            },
+            {
+                "sample_id": "14_c"
+            },
+            {
+                "sample_id": "90_b"
+            },
+            {
+                "sample_id": "335_a"
+            },
+            {
+                "sample_id": "58_e"
+            },
+            {
+                "sample_id": "17_q"
+            },
+            {
+                "sample_id": "212_c"
+            },
+            {
+                "sample_id": "130_c"
+            },
+            {
+                "sample_id": "224_a"
+            },
+            {
+                "sample_id": "73_d"
+            },
+            {
+                "sample_id": "80_q"
+            },
+            {
+                "sample_id": "407_c"
+            },
+            {
+                "sample_id": "10_g"
+            },
+            {
+                "sample_id": "44_f"
+            },
+            {
+                "sample_id": "152_d"
+            },
+            {
+                "sample_id": "3_f"
+            },
+            {
+                "sample_id": "149_d"
+            },
+            {
+                "sample_id": "44_q"
+            },
+            {
+                "sample_id": "107_b"
+            },
+            {
+                "sample_id": "20_f"
+            },
+            {
+                "sample_id": "324_c"
+            },
+            {
+                "sample_id": "135_c"
+            },
+            {
+                "sample_id": "122_d"
+            },
+            {
+                "sample_id": "359_c"
+            },
+            {
+                "sample_id": "3_s"
+            },
+            {
+                "sample_id": "297_a"
+            },
+            {
+                "sample_id": "18_a"
+            },
+            {
+                "sample_id": "375_c"
+            },
+            {
+                "sample_id": "295_c"
+            },
+            {
+                "sample_id": "31_d"
+            },
+            {
+                "sample_id": "5_p"
+            },
+            {
+                "sample_id": "58_f"
+            },
+            {
+                "sample_id": "38_a"
+            },
+            {
+                "sample_id": "32_a"
+            },
+            {
+                "sample_id": "111_b"
+            },
+            {
+                "sample_id": "7_q"
+            },
+            {
+                "sample_id": "214_a"
+            },
+            {
+                "sample_id": "177_c"
+            },
+            {
+                "sample_id": "74_d"
+            },
+            {
+                "sample_id": "32_q"
+            },
+            {
+                "sample_id": "19_c"
+            },
+            {
+                "sample_id": "101_b"
+            },
+            {
+                "sample_id": "2_g"
+            },
+            {
+                "sample_id": "320_c"
+            },
+            {
+                "sample_id": "342_a"
+            },
+            {
+                "sample_id": "113_e"
+            },
+            {
+                "sample_id": "0_s"
+            },
+            {
+                "sample_id": "135_d"
+            },
+            {
+                "sample_id": "143_e"
+            },
+            {
+                "sample_id": "206_a"
+            },
+            {
+                "sample_id": "244_c"
+            },
+            {
+                "sample_id": "110_b"
+            },
+            {
+                "sample_id": "43_a"
+            },
+            {
+                "sample_id": "41_c"
+            },
+            {
+                "sample_id": "92_a"
+            },
+            {
+                "sample_id": "143_c"
+            },
+            {
+                "sample_id": "231_a"
+            },
+            {
+                "sample_id": "343_c"
+            },
+            {
+                "sample_id": "302_a"
+            },
+            {
+                "sample_id": "2_k"
+            },
+            {
+                "sample_id": "85_b"
+            },
+            {
+                "sample_id": "3_g"
+            },
+            {
+                "sample_id": "423_c"
+            },
+            {
+                "sample_id": "179_c"
+            },
+            {
+                "sample_id": "21_b"
+            },
+            {
+                "sample_id": "85_q"
+            },
+            {
+                "sample_id": "141_c"
+            },
+            {
+                "sample_id": "22_q"
+            },
+            {
+                "sample_id": "223_c"
+            },
+            {
+                "sample_id": "391_c"
+            },
+            {
+                "sample_id": "228_c"
+            },
+            {
+                "sample_id": "16_b"
+            },
+            {
+                "sample_id": "72_a"
+            },
+            {
+                "sample_id": "7_d"
+            },
+            {
+                "sample_id": "180_a"
+            },
+            {
+                "sample_id": "162_c"
+            },
+            {
+                "sample_id": "9_e"
+            },
+            {
+                "sample_id": "79_b"
+            },
+            {
+                "sample_id": "63_q"
+            },
+            {
+                "sample_id": "340_a"
+            },
+            {
+                "sample_id": "341_c"
+            },
+            {
+                "sample_id": "265_a"
+            },
+            {
+                "sample_id": "76_a"
+            },
+            {
+                "sample_id": "254_c"
+            },
+            {
+                "sample_id": "330_a"
+            },
+            {
+                "sample_id": "130_a"
+            },
+            {
+                "sample_id": "43_b"
+            },
+            {
+                "sample_id": "169_d"
+            },
+            {
+                "sample_id": "41_g"
+            },
+            {
+                "sample_id": "10_n"
+            },
+            {
+                "sample_id": "117_b"
+            },
+            {
+                "sample_id": "327_c"
+            },
+            {
+                "sample_id": "49_e"
+            },
+            {
+                "sample_id": "149_a"
+            },
+            {
+                "sample_id": "210_a"
+            },
+            {
+                "sample_id": "1_n"
+            },
+            {
+                "sample_id": "181_a"
+            },
+            {
+                "sample_id": "179_d"
+            },
+            {
+                "sample_id": "18_g"
+            },
+            {
+                "sample_id": "7_s"
+            },
+            {
+                "sample_id": "20_d"
+            },
+            {
+                "sample_id": "20_n"
+            },
+            {
+                "sample_id": "126_e"
+            },
+            {
+                "sample_id": "1_m"
+            },
+            {
+                "sample_id": "131_e"
+            },
+            {
+                "sample_id": "0_d"
+            },
+            {
+                "sample_id": "93_a"
+            },
+            {
+                "sample_id": "224_c"
+            },
+            {
+                "sample_id": "116_e"
+            },
+            {
+                "sample_id": "10_o"
+            },
+            {
+                "sample_id": "128_a"
+            },
+            {
+                "sample_id": "326_a"
+            },
+            {
+                "sample_id": "404_c"
+            },
+            {
+                "sample_id": "48_g"
+            },
+            {
+                "sample_id": "155_a"
+            },
+            {
+                "sample_id": "251_a"
+            },
+            {
+                "sample_id": "58_c"
+            },
+            {
+                "sample_id": "167_a"
+            },
+            {
+                "sample_id": "77_b"
+            },
+            {
+                "sample_id": "1_q"
+            },
+            {
+                "sample_id": "57_f"
+            },
+            {
+                "sample_id": "128_e"
+            },
+            {
+                "sample_id": "158_d"
+            },
+            {
+                "sample_id": "68_b"
+            },
+            {
+                "sample_id": "12_i"
+            },
+            {
+                "sample_id": "73_q"
+            },
+            {
+                "sample_id": "129_c"
+            },
+            {
+                "sample_id": "330_c"
+            },
+            {
+                "sample_id": "328_c"
+            },
+            {
+                "sample_id": "147_d"
+            },
+            {
+                "sample_id": "8_q"
+            },
+            {
+                "sample_id": "264_a"
+            },
+            {
+                "sample_id": "5_b"
+            },
+            {
+                "sample_id": "304_a"
+            },
+            {
+                "sample_id": "1_h"
+            },
+            {
+                "sample_id": "219_a"
+            },
+            {
+                "sample_id": "18_e"
+            },
+            {
+                "sample_id": "138_a"
+            },
+            {
+                "sample_id": "12_c"
+            },
+            {
+                "sample_id": "282_c"
+            },
+            {
+                "sample_id": "373_c"
+            },
+            {
+                "sample_id": "15_e"
+            },
+            {
+                "sample_id": "122_e"
+            },
+            {
+                "sample_id": "77_d"
+            },
+            {
+                "sample_id": "118_c"
+            },
+            {
+                "sample_id": "116_d"
+            },
+            {
+                "sample_id": "4_r"
+            },
+            {
+                "sample_id": "209_a"
+            },
+            {
+                "sample_id": "121_e"
+            },
+            {
+                "sample_id": "232_a"
+            },
+            {
+                "sample_id": "94_c"
+            },
+            {
+                "sample_id": "370_c"
+            },
+            {
+                "sample_id": "15_c"
+            },
+            {
+                "sample_id": "275_a"
+            },
+            {
+                "sample_id": "14_d"
+            },
+            {
+                "sample_id": "1_j"
+            },
+            {
+                "sample_id": "310_c"
+            },
+            {
+                "sample_id": "329_a"
+            },
+            {
+                "sample_id": "17_f"
+            },
+            {
+                "sample_id": "102_d"
+            },
+            {
+                "sample_id": "189_a"
+            },
+            {
+                "sample_id": "150_d"
+            },
+            {
+                "sample_id": "105_c"
+            },
+            {
+                "sample_id": "71_e"
+            },
+            {
+                "sample_id": "11_i"
+            },
+            {
+                "sample_id": "402_c"
+            },
+            {
+                "sample_id": "85_a"
+            },
+            {
+                "sample_id": "286_c"
+            },
+            {
+                "sample_id": "265_c"
+            },
+            {
+                "sample_id": "248_c"
+            },
+            {
+                "sample_id": "18_f"
+            },
+            {
+                "sample_id": "7_i"
+            },
+            {
+                "sample_id": "9_n"
+            },
+            {
+                "sample_id": "19_e"
+            },
+            {
+                "sample_id": "28_q"
+            },
+            {
+                "sample_id": "29_n"
+            }
+        ],
+        "valid_files": [
+            {
+                "sample_id": "95_a"
+            },
+            {
+                "sample_id": "142_a"
+            },
+            {
+                "sample_id": "18_d"
+            },
+            {
+                "sample_id": "297_c"
+            },
+            {
+                "sample_id": "268_a"
+            },
+            {
+                "sample_id": "299_a"
+            },
+            {
+                "sample_id": "16_n"
+            },
+            {
+                "sample_id": "201_a"
+            },
+            {
+                "sample_id": "204_a"
+            },
+            {
+                "sample_id": "309_a"
+            },
+            {
+                "sample_id": "109_q"
+            },
+            {
+                "sample_id": "51_f"
+            },
+            {
+                "sample_id": "273_c"
+            },
+            {
+                "sample_id": "1_s"
+            },
+            {
+                "sample_id": "0_f"
+            },
+            {
+                "sample_id": "23_g"
+            },
+            {
+                "sample_id": "172_a"
+            },
+            {
+                "sample_id": "28_c"
+            },
+            {
+                "sample_id": "28_f"
+            },
+            {
+                "sample_id": "123_e"
+            },
+            {
+                "sample_id": "81_c"
+            },
+            {
+                "sample_id": "190_c"
+            },
+            {
+                "sample_id": "70_c"
+            },
+            {
+                "sample_id": "5_d"
+            },
+            {
+                "sample_id": "53_q"
+            },
+            {
+                "sample_id": "35_a"
+            },
+            {
+                "sample_id": "1_c"
+            },
+            {
+                "sample_id": "351_c"
+            },
+            {
+                "sample_id": "147_e"
+            },
+            {
+                "sample_id": "7_r"
+            },
+            {
+                "sample_id": "19_a"
+            },
+            {
+                "sample_id": "346_a"
+            },
+            {
+                "sample_id": "23_a"
+            },
+            {
+                "sample_id": "5_j"
+            },
+            {
+                "sample_id": "9_b"
+            },
+            {
+                "sample_id": "286_a"
+            },
+            {
+                "sample_id": "65_a"
+            },
+            {
+                "sample_id": "66_a"
+            },
+            {
+                "sample_id": "45_e"
+            },
+            {
+                "sample_id": "46_e"
+            },
+            {
+                "sample_id": "388_c"
+            },
+            {
+                "sample_id": "42_g"
+            },
+            {
+                "sample_id": "62_d"
+            },
+            {
+                "sample_id": "56_c"
+            },
+            {
+                "sample_id": "37_f"
+            },
+            {
+                "sample_id": "27_g"
+            },
+            {
+                "sample_id": "385_c"
+            },
+            {
+                "sample_id": "329_c"
+            },
+            {
+                "sample_id": "24_c"
+            },
+            {
+                "sample_id": "233_c"
+            },
+            {
+                "sample_id": "4_j"
+            },
+            {
+                "sample_id": "11_n"
+            },
+            {
+                "sample_id": "9_o"
+            },
+            {
+                "sample_id": "221_c"
+            },
+            {
+                "sample_id": "102_c"
+            },
+            {
+                "sample_id": "153_d"
+            },
+            {
+                "sample_id": "16_a"
+            },
+            {
+                "sample_id": "146_c"
+            },
+            {
+                "sample_id": "19_q"
+            },
+            {
+                "sample_id": "13_a"
+            },
+            {
+                "sample_id": "76_c"
+            },
+            {
+                "sample_id": "86_e"
+            },
+            {
+                "sample_id": "21_d"
+            },
+            {
+                "sample_id": "123_d"
+            },
+            {
+                "sample_id": "396_c"
+            },
+            {
+                "sample_id": "419_c"
+            },
+            {
+                "sample_id": "333_a"
+            },
+            {
+                "sample_id": "17_d"
+            },
+            {
+                "sample_id": "36_q"
+            },
+            {
+                "sample_id": "83_b"
+            },
+            {
+                "sample_id": "12_q"
+            },
+            {
+                "sample_id": "173_a"
+            },
+            {
+                "sample_id": "103_c"
+            },
+            {
+                "sample_id": "111_d"
+            },
+            {
+                "sample_id": "11_b"
+            },
+            {
+                "sample_id": "301_c"
+            },
+            {
+                "sample_id": "108_b"
+            },
+            {
+                "sample_id": "4_c"
+            },
+            {
+                "sample_id": "54_c"
+            },
+            {
+                "sample_id": "305_a"
+            },
+            {
+                "sample_id": "319_c"
+            },
+            {
+                "sample_id": "25_n"
+            },
+            {
+                "sample_id": "68_d"
+            },
+            {
+                "sample_id": "247_a"
+            },
+            {
+                "sample_id": "62_e"
+            },
+            {
+                "sample_id": "33_c"
+            },
+            {
+                "sample_id": "101_c"
+            },
+            {
+                "sample_id": "393_c"
+            },
+            {
+                "sample_id": "46_b"
+            },
+            {
+                "sample_id": "338_c"
+            },
+            {
+                "sample_id": "27_b"
+            },
+            {
+                "sample_id": "139_a"
+            },
+            {
+                "sample_id": "18_b"
+            },
+            {
+                "sample_id": "161_a"
+            },
+            {
+                "sample_id": "315_c"
+            },
+            {
+                "sample_id": "317_a"
+            },
+            {
+                "sample_id": "392_c"
+            },
+            {
+                "sample_id": "14_q"
+            },
+            {
+                "sample_id": "170_d"
+            },
+            {
+                "sample_id": "71_q"
+            },
+            {
+                "sample_id": "409_c"
+            },
+            {
+                "sample_id": "50_e"
+            },
+            {
+                "sample_id": "6_o"
+            },
+            {
+                "sample_id": "83_a"
+            },
+            {
+                "sample_id": "111_a"
+            },
+            {
+                "sample_id": "30_c"
+            },
+            {
+                "sample_id": "261_a"
+            },
+            {
+                "sample_id": "8_i"
+            },
+            {
+                "sample_id": "117_a"
+            },
+            {
+                "sample_id": "2_m"
+            },
+            {
+                "sample_id": "27_n"
+            },
+            {
+                "sample_id": "46_d"
+            },
+            {
+                "sample_id": "69_q"
+            },
+            {
+                "sample_id": "47_f"
+            },
+            {
+                "sample_id": "39_d"
+            },
+            {
+                "sample_id": "89_d"
+            },
+            {
+                "sample_id": "231_c"
+            },
+            {
+                "sample_id": "183_a"
+            },
+            {
+                "sample_id": "152_c"
+            },
+            {
+                "sample_id": "121_a"
+            },
+            {
+                "sample_id": "84_c"
+            },
+            {
+                "sample_id": "8_n"
+            },
+            {
+                "sample_id": "100_c"
+            },
+            {
+                "sample_id": "28_d"
+            },
+            {
+                "sample_id": "22_h"
+            },
+            {
+                "sample_id": "306_a"
+            },
+            {
+                "sample_id": "346_c"
+            },
+            {
+                "sample_id": "4_s"
+            },
+            {
+                "sample_id": "321_a"
+            },
+            {
+                "sample_id": "15_f"
+            },
+            {
+                "sample_id": "12_g"
+            },
+            {
+                "sample_id": "42_f"
+            },
+            {
+                "sample_id": "80_d"
+            },
+            {
+                "sample_id": "307_a"
+            },
+            {
+                "sample_id": "63_f"
+            },
+            {
+                "sample_id": "24_q"
+            },
+            {
+                "sample_id": "91_q"
+            },
+            {
+                "sample_id": "19_f"
+            },
+            {
+                "sample_id": "45_a"
+            },
+            {
+                "sample_id": "105_q"
+            },
+            {
+                "sample_id": "52_a"
+            },
+            {
+                "sample_id": "60_b"
+            },
+            {
+                "sample_id": "168_c"
+            },
+            {
+                "sample_id": "106_d"
+            },
+            {
+                "sample_id": "343_a"
+            },
+            {
+                "sample_id": "14_h"
+            },
+            {
+                "sample_id": "106_e"
+            },
+            {
+                "sample_id": "213_c"
+            },
+            {
+                "sample_id": "32_c"
+            },
+            {
+                "sample_id": "197_a"
+            },
+            {
+                "sample_id": "151_a"
+            },
+            {
+                "sample_id": "325_a"
+            },
+            {
+                "sample_id": "73_c"
+            },
+            {
+                "sample_id": "78_f"
+            },
+            {
+                "sample_id": "276_a"
+            },
+            {
+                "sample_id": "70_f"
+            },
+            {
+                "sample_id": "43_d"
+            },
+            {
+                "sample_id": "172_c"
+            },
+            {
+                "sample_id": "47_e"
+            },
+            {
+                "sample_id": "305_c"
+            },
+            {
+                "sample_id": "124_e"
+            },
+            {
+                "sample_id": "104_b"
+            },
+            {
+                "sample_id": "18_n"
+            },
+            {
+                "sample_id": "108_a"
+            },
+            {
+                "sample_id": "48_a"
+            },
+            {
+                "sample_id": "62_f"
+            },
+            {
+                "sample_id": "323_c"
+            },
+            {
+                "sample_id": "3_d"
+            },
+            {
+                "sample_id": "102_q"
+            },
+            {
+                "sample_id": "198_c"
+            },
+            {
+                "sample_id": "253_a"
+            },
+            {
+                "sample_id": "77_a"
+            },
+            {
+                "sample_id": "96_q"
+            },
+            {
+                "sample_id": "159_c"
+            },
+            {
+                "sample_id": "12_n"
+            },
+            {
+                "sample_id": "92_e"
+            },
+            {
+                "sample_id": "18_h"
+            },
+            {
+                "sample_id": "184_a"
+            },
+            {
+                "sample_id": "76_f"
+            },
+            {
+                "sample_id": "117_q"
+            },
+            {
+                "sample_id": "177_a"
+            },
+            {
+                "sample_id": "2_j"
+            },
+            {
+                "sample_id": "136_c"
+            },
+            {
+                "sample_id": "145_e"
+            },
+            {
+                "sample_id": "220_c"
+            },
+            {
+                "sample_id": "171_d"
+            },
+            {
+                "sample_id": "162_d"
+            },
+            {
+                "sample_id": "61_a"
+            },
+            {
+                "sample_id": "8_b"
+            },
+            {
+                "sample_id": "67_c"
+            },
+            {
+                "sample_id": "311_a"
+            },
+            {
+                "sample_id": "2_d"
+            },
+            {
+                "sample_id": "82_e"
+            },
+            {
+                "sample_id": "294_c"
+            },
+            {
+                "sample_id": "290_c"
+            },
+            {
+                "sample_id": "5_s"
+            },
+            {
+                "sample_id": "65_f"
+            },
+            {
+                "sample_id": "255_a"
+            },
+            {
+                "sample_id": "125_c"
+            },
+            {
+                "sample_id": "105_d"
+            },
+            {
+                "sample_id": "54_d"
+            },
+            {
+                "sample_id": "2_f"
+            },
+            {
+                "sample_id": "113_b"
+            },
+            {
+                "sample_id": "167_d"
+            },
+            {
+                "sample_id": "328_a"
+            },
+            {
+                "sample_id": "108_c"
+            },
+            {
+                "sample_id": "98_d"
+            },
+            {
+                "sample_id": "170_c"
+            },
+            {
+                "sample_id": "141_e"
+            },
+            {
+                "sample_id": "137_c"
+            },
+            {
+                "sample_id": "14_b"
+            },
+            {
+                "sample_id": "288_a"
+            },
+            {
+                "sample_id": "97_d"
+            },
+            {
+                "sample_id": "103_b"
+            },
+            {
+                "sample_id": "387_c"
+            },
+            {
+                "sample_id": "39_a"
+            },
+            {
+                "sample_id": "21_a"
+            },
+            {
+                "sample_id": "320_a"
+            },
+            {
+                "sample_id": "121_c"
+            },
+            {
+                "sample_id": "42_c"
+            },
+            {
+                "sample_id": "0_m"
+            },
+            {
+                "sample_id": "362_c"
+            },
+            {
+                "sample_id": "8_g"
+            },
+            {
+                "sample_id": "43_f"
+            },
+            {
+                "sample_id": "12_e"
+            },
+            {
+                "sample_id": "106_c"
+            },
+            {
+                "sample_id": "6_g"
+            },
+            {
+                "sample_id": "6_a"
+            },
+            {
+                "sample_id": "53_d"
+            },
+            {
+                "sample_id": "202_a"
+            },
+            {
+                "sample_id": "35_g"
+            },
+            {
+                "sample_id": "225_c"
+            },
+            {
+                "sample_id": "240_c"
+            },
+            {
+                "sample_id": "187_a"
+            },
+            {
+                "sample_id": "1_d"
+            },
+            {
+                "sample_id": "127_d"
+            },
+            {
+                "sample_id": "273_a"
+            },
+            {
+                "sample_id": "167_c"
+            },
+            {
+                "sample_id": "40_g"
+            },
+            {
+                "sample_id": "90_d"
+            },
+            {
+                "sample_id": "44_d"
+            },
+            {
+                "sample_id": "24_d"
+            },
+            {
+                "sample_id": "169_a"
+            },
+            {
+                "sample_id": "43_g"
+            },
+            {
+                "sample_id": "173_d"
+            },
+            {
+                "sample_id": "19_g"
+            },
+            {
+                "sample_id": "9_q"
+            },
+            {
+                "sample_id": "5_a"
+            },
+            {
+                "sample_id": "151_d"
+            },
+            {
+                "sample_id": "109_a"
+            },
+            {
+                "sample_id": "110_d"
+            },
+            {
+                "sample_id": "69_f"
+            },
+            {
+                "sample_id": "9_f"
+            },
+            {
+                "sample_id": "125_d"
+            },
+            {
+                "sample_id": "339_a"
+            },
+            {
+                "sample_id": "335_c"
+            },
+            {
+                "sample_id": "54_e"
+            },
+            {
+                "sample_id": "24_e"
+            },
+            {
+                "sample_id": "112_d"
+            },
+            {
+                "sample_id": "103_d"
+            },
+            {
+                "sample_id": "207_a"
+            },
+            {
+                "sample_id": "48_f"
+            },
+            {
+                "sample_id": "129_a"
+            },
+            {
+                "sample_id": "25_f"
+            },
+            {
+                "sample_id": "245_c"
+            },
+            {
+                "sample_id": "0_c"
+            },
+            {
+                "sample_id": "210_c"
+            },
+            {
+                "sample_id": "10_e"
+            },
+            {
+                "sample_id": "166_c"
+            },
+            {
+                "sample_id": "39_b"
+            },
+            {
+                "sample_id": "0_q"
+            },
+            {
+                "sample_id": "377_c"
+            },
+            {
+                "sample_id": "322_a"
+            },
+            {
+                "sample_id": "124_c"
+            },
+            {
+                "sample_id": "268_c"
+            },
+            {
+                "sample_id": "71_d"
+            },
+            {
+                "sample_id": "352_c"
+            },
+            {
+                "sample_id": "24_a"
+            },
+            {
+                "sample_id": "4_d"
+            },
+            {
+                "sample_id": "111_q"
+            },
+            {
+                "sample_id": "152_a"
+            },
+            {
+                "sample_id": "100_a"
+            },
+            {
+                "sample_id": "83_e"
+            },
+            {
+                "sample_id": "45_d"
+            },
+            {
+                "sample_id": "313_c"
+            },
+            {
+                "sample_id": "35_c"
+            },
+            {
+                "sample_id": "4_p"
+            },
+            {
+                "sample_id": "251_c"
+            },
+            {
+                "sample_id": "26_d"
+            },
+            {
+                "sample_id": "0_l"
+            },
+            {
+                "sample_id": "97_e"
+            },
+            {
+                "sample_id": "120_d"
+            },
+            {
+                "sample_id": "195_a"
+            },
+            {
+                "sample_id": "50_c"
+            },
+            {
+                "sample_id": "134_d"
+            },
+            {
+                "sample_id": "48_d"
+            },
+            {
+                "sample_id": "107_q"
+            },
+            {
+                "sample_id": "309_c"
+            },
+            {
+                "sample_id": "79_c"
+            },
+            {
+                "sample_id": "44_g"
+            },
+            {
+                "sample_id": "13_n"
+            },
+            {
+                "sample_id": "148_e"
+            },
+            {
+                "sample_id": "248_a"
+            },
+            {
+                "sample_id": "107_a"
+            },
+            {
+                "sample_id": "218_c"
+            },
+            {
+                "sample_id": "63_b"
+            },
+            {
+                "sample_id": "40_e"
+            },
+            {
+                "sample_id": "347_a"
+            },
+            {
+                "sample_id": "132_c"
+            },
+            {
+                "sample_id": "63_a"
+            },
+            {
+                "sample_id": "277_a"
+            },
+            {
+                "sample_id": "42_b"
+            },
+            {
+                "sample_id": "78_c"
+            },
+            {
+                "sample_id": "72_q"
+            },
+            {
+                "sample_id": "60_d"
+            },
+            {
+                "sample_id": "146_d"
+            },
+            {
+                "sample_id": "14_g"
+            },
+            {
+                "sample_id": "73_e"
+            },
+            {
+                "sample_id": "46_f"
+            },
+            {
+                "sample_id": "47_g"
+            }
+        ],
+        "test_files": [
+            {
+                "sample_id": "9_g"
+            },
+            {
+                "sample_id": "31_g"
+            },
+            {
+                "sample_id": "111_e"
+            },
+            {
+                "sample_id": "29_a"
+            },
+            {
+                "sample_id": "2_b"
+            },
+            {
+                "sample_id": "372_c"
+            },
+            {
+                "sample_id": "300_c"
+            },
+            {
+                "sample_id": "72_d"
+            },
+            {
+                "sample_id": "192_a"
+            },
+            {
+                "sample_id": "30_d"
+            },
+            {
+                "sample_id": "99_c"
+            },
+            {
+                "sample_id": "144_e"
+            },
+            {
+                "sample_id": "66_b"
+            },
+            {
+                "sample_id": "110_q"
+            },
+            {
+                "sample_id": "76_e"
+            },
+            {
+                "sample_id": "243_a"
+            },
+            {
+                "sample_id": "60_f"
+            },
+            {
+                "sample_id": "200_c"
+            },
+            {
+                "sample_id": "65_b"
+            },
+            {
+                "sample_id": "17_a"
+            },
+            {
+                "sample_id": "19_h"
+            },
+            {
+                "sample_id": "23_b"
+            },
+            {
+                "sample_id": "101_e"
+            },
+            {
+                "sample_id": "80_a"
+            },
+            {
+                "sample_id": "14_e"
+            },
+            {
+                "sample_id": "43_e"
+            },
+            {
+                "sample_id": "259_a"
+            },
+            {
+                "sample_id": "95_d"
+            },
+            {
+                "sample_id": "66_c"
+            },
+            {
+                "sample_id": "43_c"
+            },
+            {
+                "sample_id": "163_c"
+            },
+            {
+                "sample_id": "44_c"
+            },
+            {
+                "sample_id": "3_a"
+            },
+            {
+                "sample_id": "106_a"
+            },
+            {
+                "sample_id": "154_d"
+            },
+            {
+                "sample_id": "247_c"
+            },
+            {
+                "sample_id": "131_d"
+            },
+            {
+                "sample_id": "137_d"
+            },
+            {
+                "sample_id": "37_e"
+            },
+            {
+                "sample_id": "14_i"
+            },
+            {
+                "sample_id": "175_a"
+            },
+            {
+                "sample_id": "4_h"
+            },
+            {
+                "sample_id": "86_c"
+            },
+            {
+                "sample_id": "84_a"
+            },
+            {
+                "sample_id": "316_c"
+            },
+            {
+                "sample_id": "87_a"
+            },
+            {
+                "sample_id": "119_e"
+            },
+            {
+                "sample_id": "103_a"
+            },
+            {
+                "sample_id": "176_c"
+            },
+            {
+                "sample_id": "323_a"
+            },
+            {
+                "sample_id": "20_c"
+            },
+            {
+                "sample_id": "222_c"
+            },
+            {
+                "sample_id": "255_c"
+            },
+            {
+                "sample_id": "8_f"
+            },
+            {
+                "sample_id": "87_q"
+            },
+            {
+                "sample_id": "48_e"
+            },
+            {
+                "sample_id": "45_g"
+            },
+            {
+                "sample_id": "240_a"
+            },
+            {
+                "sample_id": "331_a"
+            },
+            {
+                "sample_id": "146_e"
+            },
+            {
+                "sample_id": "186_c"
+            },
+            {
+                "sample_id": "349_c"
+            },
+            {
+                "sample_id": "272_c"
+            },
+            {
+                "sample_id": "37_b"
+            },
+            {
+                "sample_id": "16_g"
+            },
+            {
+                "sample_id": "146_a"
+            },
+            {
+                "sample_id": "96_c"
+            },
+            {
+                "sample_id": "62_a"
+            },
+            {
+                "sample_id": "53_e"
+            },
+            {
+                "sample_id": "145_a"
+            },
+            {
+                "sample_id": "84_d"
+            },
+            {
+                "sample_id": "7_g"
+            },
+            {
+                "sample_id": "120_e"
+            },
+            {
+                "sample_id": "17_e"
+            },
+            {
+                "sample_id": "178_d"
+            },
+            {
+                "sample_id": "4_q"
+            },
+            {
+                "sample_id": "203_c"
+            },
+            {
+                "sample_id": "56_q"
+            },
+            {
+                "sample_id": "250_a"
+            },
+            {
+                "sample_id": "52_f"
+            },
+            {
+                "sample_id": "96_e"
+            },
+            {
+                "sample_id": "291_a"
+            },
+            {
+                "sample_id": "86_q"
+            },
+            {
+                "sample_id": "128_c"
+            },
+            {
+                "sample_id": "31_b"
+            },
+            {
+                "sample_id": "0_b"
+            },
+            {
+                "sample_id": "418_c"
+            },
+            {
+                "sample_id": "340_c"
+            },
+            {
+                "sample_id": "115_b"
+            },
+            {
+                "sample_id": "7_b"
+            },
+            {
+                "sample_id": "14_a"
+            },
+            {
+                "sample_id": "78_q"
+            },
+            {
+                "sample_id": "119_c"
+            },
+            {
+                "sample_id": "245_a"
+            },
+            {
+                "sample_id": "46_c"
+            },
+            {
+                "sample_id": "6_i"
+            },
+            {
+                "sample_id": "356_c"
+            },
+            {
+                "sample_id": "153_c"
+            },
+            {
+                "sample_id": "355_c"
+            },
+            {
+                "sample_id": "401_c"
+            },
+            {
+                "sample_id": "183_c"
+            },
+            {
+                "sample_id": "87_c"
+            },
+            {
+                "sample_id": "149_e"
+            },
+            {
+                "sample_id": "11_f"
+            },
+            {
+                "sample_id": "39_g"
+            },
+            {
+                "sample_id": "35_b"
+            },
+            {
+                "sample_id": "55_f"
+            },
+            {
+                "sample_id": "27_f"
+            },
+            {
+                "sample_id": "296_c"
+            },
+            {
+                "sample_id": "88_e"
+            },
+            {
+                "sample_id": "339_c"
+            },
+            {
+                "sample_id": "105_b"
+            },
+            {
+                "sample_id": "383_c"
+            },
+            {
+                "sample_id": "155_d"
+            },
+            {
+                "sample_id": "148_a"
+            },
+            {
+                "sample_id": "239_a"
+            },
+            {
+                "sample_id": "59_f"
+            },
+            {
+                "sample_id": "282_a"
+            },
+            {
+                "sample_id": "318_c"
+            },
+            {
+                "sample_id": "23_d"
+            },
+            {
+                "sample_id": "133_d"
+            },
+            {
+                "sample_id": "138_e"
+            },
+            {
+                "sample_id": "136_e"
+            },
+            {
+                "sample_id": "180_c"
+            },
+            {
+                "sample_id": "7_c"
+            },
+            {
+                "sample_id": "70_q"
+            },
+            {
+                "sample_id": "93_b"
+            },
+            {
+                "sample_id": "332_c"
+            },
+            {
+                "sample_id": "314_c"
+            },
+            {
+                "sample_id": "6_d"
+            },
+            {
+                "sample_id": "13_c"
+            },
+            {
+                "sample_id": "97_a"
+            },
+            {
+                "sample_id": "234_c"
+            },
+            {
+                "sample_id": "77_e"
+            },
+            {
+                "sample_id": "406_c"
+            },
+            {
+                "sample_id": "2_c"
+            },
+            {
+                "sample_id": "118_a"
+            },
+            {
+                "sample_id": "263_a"
+            },
+            {
+                "sample_id": "1_b"
+            },
+            {
+                "sample_id": "69_d"
+            },
+            {
+                "sample_id": "162_a"
+            },
+            {
+                "sample_id": "54_b"
+            },
+            {
+                "sample_id": "67_b"
+            },
+            {
+                "sample_id": "119_d"
+            },
+            {
+                "sample_id": "37_a"
+            },
+            {
+                "sample_id": "17_g"
+            },
+            {
+                "sample_id": "154_a"
+            },
+            {
+                "sample_id": "272_a"
+            },
+            {
+                "sample_id": "74_c"
+            },
+            {
+                "sample_id": "119_a"
+            },
+            {
+                "sample_id": "133_c"
+            },
+            {
+                "sample_id": "367_c"
+            },
+            {
+                "sample_id": "81_a"
+            },
+            {
+                "sample_id": "32_d"
+            },
+            {
+                "sample_id": "243_c"
+            },
+            {
+                "sample_id": "319_a"
+            },
+            {
+                "sample_id": "27_q"
+            },
+            {
+                "sample_id": "36_e"
+            },
+            {
+                "sample_id": "199_a"
+            },
+            {
+                "sample_id": "104_d"
+            }
+        ]
+    },
+    "seed": 42,
+    "pattern_model": {
+        "convolutional_layers": [
+            {
+                "filters": 8,
+                "kernel": [
+                    7,
+                    7
+                ],
+                "padding": [
+                    3,
+                    3
+                ],
+                "pool_stride": [
+                    2,
+                    2
+                ],
+                "pool_kernel": [
+                    2,
+                    2
+                ],
+                "activation": "LeakyRELU",
+                "pooling": "Max"
+            },
+            {
+                "filters": 16,
+                "kernel": [
+                    5,
+                    5
+                ],
+                "padding": [
+                    2,
+                    2
+                ],
+                "pool_stride": [
+                    2,
+                    2
+                ],
+                "pool_kernel": [
+                    2,
+                    2
+                ],
+                "activation": "LeakyRELU",
+                "pooling": "Max"
+            },
+            {
+                "filters": 16,
+                "kernel": [
+                    3,
+                    3
+                ],
+                "padding": [
+                    1,
+                    1
+                ],
+                "pool_stride": [
+                    2,
+                    2
+                ],
+                "pool_kernel": [
+                    2,
+                    2
+                ],
+                "activation": "LeakyRELU",
+                "pooling": "Max"
+            }
+        ],
+        "linear_layers": [
+            {
+                "size_out": 512,
+                "activation": "LeakyRELU",
+                "drop_out": 0.2
+            },
+            {
+                "size_out": 512,
+                "activation": "LeakyRELU",
+                "drop_out": 0.2
+            }
+        ],
+        "input_size": [
+            64,
+            126
+        ],
+        "output_size": 2,
+        "output_activation": "Sigmoid",
+        "training": {
+            "seed": 42,
+            "n_epochs": 400,
+            "batch_size": 256,
+            "lr": 0.0002,
+            "weight_decay": 1e-7,
+            "loss_fn": "CompleteBoxIOUWeighted",
+            "validation_freq": 5,
+            "samples_per_sound": 5,
+            "chance_of_sampling_empty": 0.0,
+            "aug_std": 0.15,
+            "augments": [
+                "gauss"
+            ]
+        }
+    },
+    "classification_model": {
+        "convolutional_layers": [
+            {
+                "filters": 8,
+                "kernel": [
+                    5,
+                    5
+                ],
+                "padding": [
+                    2,
+                    2
+                ],
+                "pool_stride": [
+                    2,
+                    2
+                ],
+                "pool_kernel": [
+                    2,
+                    2
+                ],
+                "activation": "LeakyRELU",
+                "pooling": "Max"
+            },
+            {
+                "filters": 16,
+                "kernel": [
+                    5,
+                    5
+                ],
+                "padding": [
+                    2,
+                    2
+                ],
+                "pool_stride": [
+                    2,
+                    2
+                ],
+                "pool_kernel": [
+                    2,
+                    2
+                ],
+                "activation": "LeakyRELU",
+                "pooling": "Max"
+            },
+            {
+                "filters": 16,
+                "kernel": [
+                    3,
+                    3
+                ],
+                "padding": [
+                    2,
+                    2
+                ],
+                "pool_stride": [
+                    2,
+                    2
+                ],
+                "pool_kernel": [
+                    2,
+                    2
+                ],
+                "activation": "LeakyRELU",
+                "pooling": "Max"
+            }
+        ],
+        "linear_layers": [
+            {
+                "size_out": 256,
+                "activation": "LeakyRELU",
+                "drop_out": 0.75
+            },
+            {
+                "size_out": 256,
+                "activation": "LeakyRELU",
+                "drop_out": 0.75
+            }
+        ],
+        "input_size": [
+            64,
+            126
+        ],
+        "output_size": 1,
+        "output_activation": null,
+        "training": {
+            "seed": 42,
+            "n_epochs": 400,
+            "batch_size": 256,
+            "lr": 0.0002,
+            "weight_decay": 1e-6,
+            "loss_fn": "BCE",
+            "validation_freq": 5,
+            "samples_per_sound": 5,
+            "chance_of_sampling_empty": 0.75,
+            "aug_std": 0.15,
+            "augments": [
+                "gauss"
+            ]
+        }
+    }
+}

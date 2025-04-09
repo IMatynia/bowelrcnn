@@ -1,0 +1,52 @@
+Plan prezentacji:
+
+- wprowadzenie do problemu
+	- krótki opis problemu
+	- jakie są dane wejściowe
+	- skąd są pozyskane
+	- jak są pozyskiwane
+	- co próbujemy uzyskać
+		- obrazek z przykładami
+	- po krótce zastosowania dźwięków jelitowych w medycynie
+- poprzednie rozwiązania
+	- krótki wstęp opisujący historię rozwiązań tego problemu
+	- przedstaw to co było już opisane w poprzedniej pracy i to co jest
+	  nowego
+	- jakie zalety może mieć moje rozwiązanie?
+		- szybsze trenowanie, możliwość wyboru dokładności poprzez
+		  parametry inferencji
+- źródło pomysłu
+	- waveform -> spektrogram -> wykrywanie schematu na obrazie
+- szczegółowy opis rozwiązania
+	- opis części clasyfikującej
+	- opis części wyznaczającej region
+- opis inferencji
+	- opis inferencji na podstawie obydwu modeli
+	- parametry inferencji (procent głosu, threshold detekcji, ilość
+	  nałożeń)
+- przetwarzanie danych wejściowych do formy z używanej w sieciach neuronowych
+	- podział na podzbiory
+	- scalanie zbiorów
+	- generowanie spektrogramu
+	- wyznaczanie obszarów próbkowania okien zawierających i
+	  niezawierających dźwięków jelitowych
+	- zamiana timestamp'u na okno przy użyciu wyszukiwania binarnego
+- trening
+	- użyta augmentacja
+	- użyta technologia (wandb, pytorch i jego elementy)
+	- użyte metryki - opis IOU
+- wyniki i eksperymenty
+	- wyniki dla bazowego modelu
+	- wyniki poprzednich rozwiązań
+- spekulacje odnośnie gorszej jakości modelu
+	- brak wystarczającej ilości danych - ograniczona póla nagrań i źródeł
+	  nagrań
+	- lepsza augmentacja danych
+- przyszły rozwój
+	- dopracowanie architektury i hiperparametrów
+	- wzbogacenie zbioru treningowego o większą ilość danych
+	- self-supervised learning
+- źródła
+	- jeśli będzie czas to opisać co się znajduje w którym źródle
+- dyskusja
+

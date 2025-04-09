@@ -1,0 +1,57 @@
+audio_mean: -47.913372
+audio_std: 17.81253
+augmentation_freq_masking: 0.05
+augmentation_freq_probability: 0.0
+augmentation_gaussian_probability: 0.0
+augmentation_gaussian_std: 0.05
+augmentation_mixup_size: 1.0
+augmentation_overlapping: 1.0
+augmentation_permutation_probability: 0.0
+augmentation_shuffle_intervals: 5
+augmentation_shuffle_probability: 0.0
+augmentation_size: 1.0
+augmentation_time_masking: 0.05
+augmentation_time_probability: 0.0
+augmentation_vertical_flip_probability: 1.0
+batch_size: 8
+chunk_length: 0.01
+epochs: 100
+fft: 0.01
+frequency: 44100
+hop_length: 0.0025
+max_freq: 2000
+model_type: convrnn
+model_version: '2.0'
+overlapping: 1.0
+semisupervised: fixmatch
+test_files:
+- annotation20200711-train.wav
+- czeresnia-M1-201127-000_201128-part20210326.wav
+- truskawka-M200505-1-1-S.wav
+- pigwa-M6-201111-000_201122-S.wav
+- malina-M200521-6-2-S.wav
+- sliwka-M200606-2-2-S.wav
+- mango-M200505-4-2-S.wav
+train_files:
+- annotation-shortened-1405.wav
+- agrest-M200516-1-2-part20210122.wav
+- borowka-M8-201102-000_201103-part20210123.wav
+- brzoskwinia-M200505-6-1-part20210325.wav
+- pomelo-20210310-part20210325-2.wav
+unannotated_files:
+- 002_AleK_09_06_2022.wav
+- 002_EmiT_31_01_2023.wav
+- 002_KatK_31_01_2023.wav
+- 003_AnnB_03_07_2022.wav
+- annotation20200711-test.wav
+- recording.wav
+valid_files:
+- poziomka-REVISED-annotation20200711-from-3-200311.wav
+- gruszka-M200505-2-1-fragment.wav
+- jablko-M200516-2-2-S.wav
+- jagoda-M200606-8-2-S.wav
+- porzeczka-M200507-6-0-S.wav
+- poziomka-M200311-3-0-S.wav
+- morela-M200613-6-2-S.wav
+wav_sample_length: 2
+window_type: hann

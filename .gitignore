@@ -1,0 +1,17 @@
+data
+bowel
+__py*
+*.pyc
+kaggle-data
+subscale_data
+.idea
+*checkpoint.ipynb
+/kaggle-processed/
+notebooks/checkpoints*
+notebooks/wandb
+data-kaggle
+.vscode
+.venv
+*~
+wandb
+datasets

@@ -1,0 +1,32 @@
+Commit hash: 5650cd91a6674b5c42021cf9f024caed325d6f0c
+Description:
+Training parameters are available at src.core.config.Conf with modifications.
+For pattern model modified fields include:
+    n_reps_per_epoch=5,
+    empty_per_sound_multiplier=0,
+    lr=1.e-4,
+    augmentation_std=0.3,
+    model_type="CNN with improved data augmentation",
+    loss_fn="Modified complete IOU loss"
+For region classification model modified fields are:
+    loss_fn="BCE",
+    n_epochs=100,
+    n_reps_per_epoch=5,
+    augmentation_std=0.3,
+    empty_per_sound_multiplier=3,
+    model_type="CNN with improved data augmentation",
+For prediction following parameters were used:
+- 16x - each segment of source audio was sampled by 16 different windows
+- 0.2 - for a segment to be qualified as a prediction at least 0.2*16 bounding boxes must include it
+- 0.5 - for a window to become a window of interest, classification must have at least 0.5 confidence of there being a bowel sound within it. If threshold is met, bounding box is predicted for the window.
+Raw results:
+{'TP': 18.68102129734969,
+ 'TN': 551.4001393679321,
+ 'FP': 38.227272632066985,
+ 'FN': 35.691566702651,
+ 'avg_iou': 0.20173919452833802,
+ 'accuracy': 0.8852191935796304,
+ 'precision': 0.32826535479204055,
+ 'recall': 0.3435742528450081,
+ 'specificity': 0.9351670701631711,
+ 'f1_score': 0.3357453854328471}

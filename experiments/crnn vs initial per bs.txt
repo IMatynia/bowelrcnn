@@ -1,0 +1,18 @@
+Dane pozyskane na zbiorze testowym nowego roziązania
+Skrypt: test_model.py
+Predykcje: crnn_previous_model_verification/predictions_new_set_new_data.csv i initial/infered_on_new.csv
+
+total bowel sounds in test dataset: 601
+preds with iou > 0: 445
+no predictions were made for 156
+bowel sounds where old model performs better: 392
+bowel sounds where new model performs better: 52
+both models detected 186 sounds with accuracy of IOU > 0
+previous model was the only one to detect 212 sounds
+new model was the only one to detect 47 sounds
+previous model predicted 94 regions with iou = 0
+new model predicted 394 regions with iou = 0
+previous model's non zero IOUs - avg:0.6638, std:0.1908, median:0.6968, min:0.0461, max:0.9829
+new model's non zero IOUs - avg:0.1576, std:0.1369, median:0.1223, min:0.0042, max:0.9071
+previous model's length fraction comparison - avg:1.1696, std:0.9813, median:0.9666, min:0.0461, max:9.2907
+new model's length fraction comparison - avg:7.5990, std:6.7932, median:6.8600, min:0.0042, max:64.6127
